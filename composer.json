@@ -1,6 +1,6 @@
 {
-    "name": "pickles2/preset-get-start-pickles2",
-    "description": "Pickles 2 は、静的で大きなウェブサイトを効率よく構築できる オープンソースのHTML生成ツールです。",
+    "name": "tomk79/preset-pickles2-clover",
+    "description": "Pickles 2 の プラグイン型CMS Clover のサンプルプロジェクトです。",
     "keywords": ["pickles2"],
     "license": "MIT",
     "authors": [
