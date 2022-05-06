@@ -17,7 +17,7 @@ composer install;
 composer start;
 ```
 
-サーバーが起動したら http://localhost:8080/ で
+サーバーが起動したら、ブラウザで http://localhost:8080/ にアクセスし、管理画面を開きます。
 
 
 ## 更新履歴 - Change log
