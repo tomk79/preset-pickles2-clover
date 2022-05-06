@@ -4,6 +4,11 @@
  */
 return call_user_func( function(){
 
+	if( is_file(__DIR__.'/../.env') ){
+		$dotenv = \Dotenv\Dotenv::createImmutable( __DIR__.'/../' );
+		$dotenv->load();
+	}
+
 	// initialize
 
 	/** コンフィグオブジェクト */
@@ -13,10 +18,10 @@ return call_user_func( function(){
 	// project
 
 	/** サイト名 */
-	$conf->name = 'Get start "Pickles 2" !';
+	$conf->name = 'Clover Sample';
 
 	/** コピーライト表記 */
-	$conf->copyright = 'Pickles Project';
+	$conf->copyright = 'Your Name';
 
 	/**
 	 * スキーマ
@@ -78,7 +83,7 @@ return call_user_func( function(){
 	 * コマンドのパスが通っていない場合は、絶対パスで設定してください。
 	 */
 	$conf->commands = new stdClass;
-	$conf->commands->php = 'php';
+	$conf->commands->php = (isset($_ENV['CMD_PHP']) ? $_ENV['CMD_PHP'] : 'php');
 
 	/**
 	 * php.ini のパス
@@ -208,7 +213,7 @@ return call_user_func( function(){
 	 * - または、Pickles 2 上に構築したウェブアプリケーションをサービスとして公開する場合、
 	 *   この値を 0 に設定し、PXコマンド機能を無効にしてください。(この場合でも、CLIからの実行は許可されます)
 	 */
-	$conf->allow_pxcommands = 0;
+	$conf->allow_pxcommands = 1;
 
 
 
@@ -222,6 +227,11 @@ return call_user_func( function(){
 	 * サイトマップ読み込みの前に実行するプラグインを設定します。
 	 */
 	$conf->funcs->before_sitemap = array(
+		// px2-clover
+		\tomk79\pickles2\px2clover\register::clover(array(
+			"protect_preview" => true, // プレビューに認証を要求するか？
+		)),
+
 		// PX=clearcache
 		'picklesFramework2\commands\clearcache::register' ,
 
@@ -252,6 +262,10 @@ return call_user_func( function(){
 				// 'no_convert'=>'pass',
 			),
 		)).')' ,
+
+		// px2-serve
+		\tomk79\pickles2\px2serve\serve::register(),
+
 	);
 
 	/**
