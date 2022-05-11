@@ -9,6 +9,9 @@
             "email": "tomk79@gmail.com"
         }
     ],
+    "config": {
+        "process-timeout": 0
+    },
 	"scripts": {
 		"start": [
 			"@php ./src_px2/.px_execute.php \"/?PX=serve\""
