@@ -35,9 +35,6 @@
  * module: std-document:basics/table
  */
   /**
- * module: std-document:basics/text
- */
-  /**
  * module: std-document:grids/grid
  */
   /**
@@ -567,6 +564,7 @@
   margin-top: 0.5em;
   line-height: 1.3;
   color: #999;
+  text-align: left;
 }
 .contents .px2-image__caption * {
   margin-top: 0;
@@ -694,16 +692,6 @@
 }
 .contents table.px2-table--right {
   margin: 0 0 0 auto;
-}
-.contents pre {
-  padding: 1em;
-  overflow: auto;
-}
-.contents pre code {
-  display: inline;
-  border: none;
-  padding: 0;
-  margin: 0;
 }
 .contents .px2-grid {
   display: flex;

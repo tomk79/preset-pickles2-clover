@@ -38,8 +38,11 @@
         "tomk79/broccoli-module-interact": "~0.1",
         "tomk79/broccoli-module-medias": "~0.1",
         "tomk79/broccoli-module-lp": "~0.1",
+		"tomk79/px2-page-list-generator": "^2.0.2",
+        "tomk79/px2-private-memo-utility": "~0.1",
         "tomk79/px2-scss": "~0.1.0",
-        "tomk79/px2-serve": "~0.1.3"
+        "tomk79/px2-serve": "~0.1.3",
+		"vlucas/phpdotenv": "~5.4.0"
     },
     "autoload": {
         "files": [

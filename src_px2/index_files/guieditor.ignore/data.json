@@ -5,59 +5,106 @@
             "fields": {
                 "main": [
                     {
-                        "modId": "lp:containers/container",
+                        "modId": "std-document:utils/viewport-fit",
                         "fields": {
-                            "text-color": "#00a0e6",
-                            "background-color": "#f6f6f6",
+                            "text-color": {
+                                "src": "#00A0E6"
+                            },
+                            "background-color": {
+                                "src": "#F6F6F6"
+                            },
                             "background-image": {
-                                "resKey": "8be607047125cb7f621d3bf77ac5787f",
-                                "path": "./index_files/resources/8be607047125cb7f621d3bf77ac5787f.txt",
-                                "resType": "none",
+                                "resKey": "0062a42cf26ae436a313720f05837813",
+                                "path": "./index_files/resources/0062a42cf26ae436a313720f05837813.unknown",
+                                "resType": "",
                                 "webUrl": ""
                             },
-                            "background-image-effect": "",
-                            "min-height": "380px",
+                            "min-height": {
+                                "src": ""
+                            },
                             "margin-padding": {
                                 "marginTop": "",
                                 "marginRight": "",
                                 "marginBottom": "",
                                 "marginLeft": "",
-                                "paddingTop": "3rem",
+                                "paddingTop": "",
                                 "paddingRight": "",
                                 "paddingBottom": "",
                                 "paddingLeft": ""
                             },
-                            "fluid-innter": "",
+                            "fluid-contents": {
+                                "src": ""
+                            },
                             "main": [
                                 {
-                                    "modId": "std-document:utils/p",
+                                    "modId": "lp:containers/container",
                                     "fields": {
-                                        "paragraph": "px2-p",
-                                        "text-align": " px2-text-align-center",
+                                        "text-color": {
+                                            "src": "#00a0e6"
+                                        },
+                                        "background-color": {
+                                            "src": "#f6f6f6"
+                                        },
+                                        "background-image": {
+                                            "resKey": "8be607047125cb7f621d3bf77ac5787f",
+                                            "path": "./index_files/resources/8be607047125cb7f621d3bf77ac5787f.txt",
+                                            "resType": "none",
+                                            "webUrl": ""
+                                        },
+                                        "background-image-effect": {
+                                            "src": ""
+                                        },
+                                        "min-height": {
+                                            "src": "380px"
+                                        },
+                                        "margin-padding": {
+                                            "marginTop": "",
+                                            "marginRight": "",
+                                            "marginBottom": "",
+                                            "marginLeft": "",
+                                            "paddingTop": "3rem",
+                                            "paddingRight": "",
+                                            "paddingBottom": "",
+                                            "paddingLeft": ""
+                                        },
+                                        "fluid-innter": {
+                                            "src": ""
+                                        },
                                         "main": [
                                             {
-                                                "modId": "std-document:basics/image",
+                                                "modId": "std-document:utils/p",
                                                 "fields": {
-                                                    "href": "",
-                                                    "target": "",
-                                                    "image_src": {
-                                                        "resKey": "06ca6ed8bca0381b421041d77fe30dcf",
-                                                        "path": "./index_files/resources/welcome.svg",
-                                                        "resType": "",
-                                                        "webUrl": ""
-                                                    },
-                                                    "alt_text": "Welcome ! to Pickles 2"
-                                                },
-                                                "anchor": "",
-                                                "dec": ""
-                                            },
-                                            {
-                                                "modId": "std-document:basics/text",
-                                                "fields": {
-                                                    "main": {
-                                                        "src": "## ようこそ、 Pickles 2 の世界へ！",
-                                                        "editor": "markdown"
-                                                    }
+                                                    "paragraph": "px2-p",
+                                                    "text-align": " px2-text-align-center",
+                                                    "main": [
+                                                        {
+                                                            "modId": "std-document:basics/image",
+                                                            "fields": {
+                                                                "href": "",
+                                                                "target": "",
+                                                                "image_src": {
+                                                                    "resKey": "06ca6ed8bca0381b421041d77fe30dcf",
+                                                                    "path": "./index_files/resources/welcome.svg",
+                                                                    "resType": "",
+                                                                    "webUrl": ""
+                                                                },
+                                                                "alt_text": "Welcome ! to Pickles 2"
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        },
+                                                        {
+                                                            "modId": "std-document:basics/text",
+                                                            "fields": {
+                                                                "main": {
+                                                                    "src": "## ようこそ、 Pickles 2 の世界へ！",
+                                                                    "editor": "markdown"
+                                                                }
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        }
+                                                    ]
                                                 },
                                                 "anchor": "",
                                                 "dec": ""
@@ -73,118 +120,99 @@
                         "dec": ""
                     },
                     {
-                        "modId": "lp:containers/container",
+                        "modId": "std-document:basics/text",
                         "fields": {
-                            "text-color": "",
-                            "background-color": "",
-                            "background-image": {
-                                "resKey": "",
-                                "path": "about:blank",
-                                "resType": "",
-                                "webUrl": ""
-                            },
-                            "background-image-effect": "",
-                            "min-height": "",
-                            "margin-padding": "",
-                            "fluid-innter": "",
-                            "main": [
+                            "main": {
+                                "src": "## 次のステップ",
+                                "editor": "markdown"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:grids/grid",
+                        "fields": {
+                            "col": [
                                 {
-                                    "modId": "std-document:basics/text",
+                                    "modId": "std-document:grids/grid",
                                     "fields": {
-                                        "main": {
-                                            "src": "## 次のステップ",
-                                            "editor": "markdown"
-                                        }
+                                        "column-width": "1of3",
+                                        "main": [
+                                            {
+                                                "modId": "std-document:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "### サイトマップを編集します\n\nはじめに、サイト全体の構造をサイトマップに登録します。1行が1ページで表現されるCSV形式のファイルです。\n\nサイトマップCSVは次のパスに置かれています。\n\n```\n./px-files/sitemaps/\n```\n",
+                                                        "editor": "markdown"
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
                                     },
+                                    "subModName": "col",
                                     "anchor": "",
                                     "dec": ""
                                 },
                                 {
                                     "modId": "std-document:grids/grid",
                                     "fields": {
-                                        "col": [
+                                        "column-width": "1of3",
+                                        "main": [
                                             {
-                                                "modId": "std-document:grids/grid",
+                                                "modId": "std-document:basics/text",
                                                 "fields": {
-                                                    "column-width": "1of3",
-                                                    "main": [
-                                                        {
-                                                            "modId": "std-document:basics/text",
-                                                            "fields": {
-                                                                "main": {
-                                                                    "src": "### サイトマップを編集します\n\nはじめに、サイト全体の構造をサイトマップに登録します。1行が1ページで表現されるCSV形式のファイルです。\n\nサイトマップCSVは次のパスに置かれています。\n\n```\n./px-files/sitemaps/\n```\n",
-                                                                    "editor": "markdown"
-                                                                }
-                                                            },
-                                                            "anchor": "",
-                                                            "dec": ""
-                                                        }
-                                                    ]
+                                                    "main": {
+                                                        "src": "### テーマを編集します\n\nテーマは、コンテンツエリア以外のHTMLソースを生成するPHPテンプレートです。\n\n次のパスに置かれています。\n\n```\n./px-files/themes/\n```\n",
+                                                        "editor": "markdown"
+                                                    }
                                                 },
-                                                "subModName": "col",
-                                                "anchor": "",
-                                                "dec": ""
-                                            },
-                                            {
-                                                "modId": "std-document:grids/grid",
-                                                "fields": {
-                                                    "column-width": "1of3",
-                                                    "main": [
-                                                        {
-                                                            "modId": "std-document:basics/text",
-                                                            "fields": {
-                                                                "main": {
-                                                                    "src": "### テーマを編集します\n\nテーマは、コンテンツエリア以外のHTMLソースを生成するPHPテンプレートです。\n\n次のパスに置かれています。\n\n```\n./px-files/themes/\n```\n",
-                                                                    "editor": "markdown"
-                                                                }
-                                                            },
-                                                            "anchor": "",
-                                                            "dec": ""
-                                                        }
-                                                    ]
-                                                },
-                                                "subModName": "col",
-                                                "anchor": "",
-                                                "dec": ""
-                                            },
-                                            {
-                                                "modId": "std-document:grids/grid",
-                                                "fields": {
-                                                    "column-width": "1of3",
-                                                    "main": [
-                                                        {
-                                                            "modId": "std-document:basics/text",
-                                                            "fields": {
-                                                                "main": {
-                                                                    "src": "### コンテンツを編集します\n\nコンテンツは、コンテンツエリアのソースだけが記述されたシンプルなHTMLファイルです。<br />\nサイトマップの path 欄に登録したパスにHTMLファイルを作成してください。<br />\n\nあなたがいま見ているこのページは、テキストエディタで `/index.html` を開くとソースを確認できます。<br />\nこのページも、削除や上書きしてあなたのサイトのトップページに置き換えてください。<br />\n",
-                                                                    "editor": "markdown"
-                                                                }
-                                                            },
-                                                            "anchor": "",
-                                                            "dec": ""
-                                                        }
-                                                    ]
-                                                },
-                                                "subModName": "col",
                                                 "anchor": "",
                                                 "dec": ""
                                             }
                                         ]
-                                    }
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
                                 },
                                 {
-                                    "modId": "std-document:basics/text",
+                                    "modId": "std-document:grids/grid",
                                     "fields": {
-                                        "main": {
-                                            "src": "### パブリッシュします\n\nサイトができあがったら、そのまま静的なHTMLに書き出すことができます。<br />\n次のコマンドで、パブリッシュを実行します。\n\n```\n$ php ./.px_execute.php /?PX=publish.run\n```\n\nしばらくすると、次のパスに、静的なHTMLファイルが生成されます。\n\n```\n./px-files/dist/\n```\n",
-                                            "editor": "markdown"
-                                        }
+                                        "column-width": "1of3",
+                                        "main": [
+                                            {
+                                                "modId": "std-document:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "### コンテンツを編集します\n\nコンテンツは、コンテンツエリアのソースだけが記述されたシンプルなHTMLファイルです。<br />\nサイトマップの path 欄に登録したパスにHTMLファイルを作成してください。<br />\n\nあなたがいま見ているこのページは、テキストエディタで `/index.html` を開くとソースを確認できます。<br />\nこのページも、削除や上書きしてあなたのサイトのトップページに置き換えてください。<br />\n",
+                                                        "editor": "markdown"
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
                                     },
+                                    "subModName": "col",
                                     "anchor": "",
                                     "dec": ""
                                 }
                             ]
                         }
+                    },
+                    {
+                        "modId": "std-document:basics/text",
+                        "fields": {
+                            "main": {
+                                "src": "### パブリッシュします\n\nサイトができあがったら、そのまま静的なHTMLに書き出すことができます。<br />\n次のコマンドで、パブリッシュを実行します。\n\n```\n$ php ./.px_execute.php /?PX=publish.run\n```\n\nしばらくすると、次のパスに、静的なHTMLファイルが生成されます。\n\n```\n./px-files/dist/\n```\n",
+                                "editor": "markdown"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
                     }
                 ]
             }

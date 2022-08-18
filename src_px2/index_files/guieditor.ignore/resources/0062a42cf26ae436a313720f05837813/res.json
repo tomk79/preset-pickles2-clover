@@ -1,8 +1,6 @@
 {
-    "ext": "txt",
-    "size": 0,
-    "base64": "",
-    "md5": "",
+    "size": null,
+    "md5": "d41d8cd98f00b204e9800998ecf8427e",
     "isPrivateMaterial": false,
     "publicFilename": "",
     "field": "image",

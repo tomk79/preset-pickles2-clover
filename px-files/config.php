@@ -314,6 +314,13 @@ return call_user_func( function(){
 			'default_theme_id' => 'gui_sample',
 		)).')' ,
 
+		// Private Memo Utility: コンテンツ加工処理
+		\tomk79\pickles2\px2PrivateMemoUtility\main::processor( [
+			"auto_link_target_blank" => false,
+			"hide_referrer" => false,
+			"allow_highlight" => false,
+		] ),
+
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
 

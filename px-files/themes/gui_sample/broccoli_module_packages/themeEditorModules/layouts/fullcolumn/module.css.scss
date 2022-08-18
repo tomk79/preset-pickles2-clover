@@ -91,6 +91,7 @@ p, li, dt, dd{
 	&__body{
 		display: flex;
 		max-width: 1024px;
+		width: calc(100% - 40px);
 		margin: 0 auto;
 	}
 	&__content{
@@ -111,7 +112,7 @@ p, li, dt, dd{
 		padding: 1px 0 0 0;
 		.theme-layouts__body{
 			display: block;
-			max-width: none;
+			padding-bottom: 20px;
 		}
 	}
 	&--fullcolumn{
