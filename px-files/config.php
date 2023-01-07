@@ -83,7 +83,7 @@ return call_user_func( function(){
 	 * コマンドのパスが通っていない場合は、絶対パスで設定してください。
 	 */
 	$conf->commands = new stdClass;
-	$conf->commands->php = (isset($_ENV['CMD_PHP']) ? $_ENV['CMD_PHP'] : 'php');
+	$conf->commands->php = ($_ENV['CMD_PHP'] ?? 'php');
 
 	/**
 	 * php.ini のパス
@@ -130,8 +130,6 @@ return call_user_func( function(){
 		'/.htaccess' => 'ignore' ,
 		'/.px_execute.php' => 'ignore' ,
 		'/px-files/*' => 'ignore' ,
-		'*.ignore/*' => 'ignore' ,
-		'*.ignore.*' => 'ignore' ,
 		'/composer.json' => 'ignore' ,
 		'/composer.lock' => 'ignore' ,
 		'/README.md' => 'ignore' ,
@@ -141,6 +139,13 @@ return call_user_func( function(){
 		'*/.svn/*' => 'ignore' ,
 		'*/.git/*' => 'ignore' ,
 		'*/.gitignore' => 'ignore' ,
+
+		'*.ignore/*' => 'ignore' ,
+		'*.ignore.*' => 'ignore' ,
+		'*.pass/*' => 'pass' ,
+		'*.pass.*' => 'pass' ,
+		'*.direct/*' => 'direct' ,
+		'*.direct.*' => 'direct' ,
 
 		'*.html' => 'html' ,
 		'*.htm' => 'html' ,
@@ -313,13 +318,6 @@ return call_user_func( function(){
 			'attr_bowl_name_by'=>'data-contents-area',
 			'default_theme_id' => 'gui_sample',
 		)).')' ,
-
-		// Private Memo Utility: コンテンツ加工処理
-		\tomk79\pickles2\px2PrivateMemoUtility\main::processor( [
-			"auto_link_target_blank" => false,
-			"hide_referrer" => false,
-			"allow_highlight" => false,
-		] ),
 
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
