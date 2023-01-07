@@ -20,7 +20,6 @@
 			"@php ./src_px2/.px_execute.php \"/?PX=serve.pub\""
 		]
 	},
-    "minimum-stability": "dev",
     "repositories": [
     ],
     "require": {
