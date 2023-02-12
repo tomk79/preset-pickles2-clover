@@ -1,7 +1,7 @@
 Clover CMS
 =========
 
-Pickles 2 の プラグイン型CMS Clover のサンプルプロジェクトです。
+[Pickles 2](https://pickles2.com/) の プラグイン型CMS Clover のサンプルプロジェクトです。
 
 ## Install
 
@@ -20,7 +20,7 @@ $ composer start;
 
 ## 更新履歴 - Change log
 
-### tomk79/preset-pickles2-clover v0.1.0 (リリース日未定)
+### tomk79/preset-pickles2-clover v0.1.0 (2023年2月12日)
 
 - Initial Release
 
