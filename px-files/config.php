@@ -104,7 +104,7 @@ return call_user_func( function(){
 	 * 最初のファイル名と同じものとして処理します。
 	 */
 	$conf->directory_index = array(
-		'index.html'
+		'index.html',
 	);
 
 
@@ -316,7 +316,7 @@ return call_user_func( function(){
 			'cookie_theme_switch'=>'THEME',
 			'path_theme_collection'=>'../px-files/themes/',
 			'attr_bowl_name_by'=>'data-contents-area',
-			'default_theme_id' => 'gui_sample',
+			'default_theme_id' => 'pickles2_theme',
 		)).')' ,
 
 		// Apache互換のSSIの記述を解決する
