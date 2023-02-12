@@ -12,6 +12,7 @@
     "config": {
         "process-timeout": 0
     },
+    "minimum-stability": "stable",
 	"scripts": {
 		"start": [
 			"@php ./src_px2/.px_execute.php \"/?PX=serve\""
@@ -46,7 +47,7 @@
     },
     "extra": {
         "px2package": {
-            "name": "Clover Sample",
+            "name": "Clover CMS",
             "type": "project",
             "path": "src_px2/.px_execute.php",
             "path_homedir": "px-files/"
